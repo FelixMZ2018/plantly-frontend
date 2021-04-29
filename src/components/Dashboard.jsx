@@ -1,7 +1,7 @@
 import React from "react";
 import { axiosInstance } from '../clients/axiosInstance';
 import GroupCard from "../components/Groups/Groupcard";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Button from "./General/Button";
 
 class Dashboard extends React.Component {
@@ -31,7 +31,6 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="Dashboard overflow-scroll">
-        {(this.state.isLoaded = false && <h2>Fetching Data!</h2>)}
         {this.state.groups.map((group) => (
           <GroupCard key={group.id} group={group}/>
         ))}

@@ -1,10 +1,9 @@
-import React, { Component } from "react";
-import { useParams, withRouter, useHistory } from "react-router-dom";
+import React from "react";
+import {withRouter } from "react-router-dom";
 import { axiosInstance } from "../../clients/axiosInstance";
 import PlantViewSensorCard from "../Sensors/PlantViewSensorCard";
 import Button from "../General/Button";
 import ConfirmationModal from "../General/ConfirmationModal";
-import AdoptSensor from "../Sensors/AdoptSensor";
 
 class ViewPlant extends React.Component {
   constructor(props) {
@@ -51,7 +50,7 @@ class ViewPlant extends React.Component {
 
   image(props){
     if (!(this.state.plant.image_url === false)) {
-      <img src={this.state.plant.image_url}></img> 
+      <img src={this.state.plant.image_url} alt="A plant"></img> 
     }
   }
 
@@ -61,7 +60,6 @@ class ViewPlant extends React.Component {
         headers: { Authorization: `Bearer ${this.state.jwt}` },
       })
       .then((res) => {
-        const groups = res.data;
         this.setState({
           isLoaded: true,
           plant: res.data,

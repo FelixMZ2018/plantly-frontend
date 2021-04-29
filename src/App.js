@@ -1,18 +1,15 @@
-import React, { setState, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   HashRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink,
-  Redirect,
   useHistory,
 } from "react-router-dom";
 import { axiosInstance } from "./clients/axiosInstance";
 
 import Sidebar from "./components/Sidebar";
-import Breadcrumbs from "./components/Breadcrumbs";
-import Notifications from "./components/Notifications";
+//import Breadcrumbs from "./components/Breadcrumbs";
+//import Notifications from "./components/Notifications";
 import CentralWindow from "./components/CentralWindow";
 import Dashboard from "./components/Dashboard";
 import CreatePlant from "./components/Plants/CreatePlant";
