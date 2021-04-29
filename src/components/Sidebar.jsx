@@ -8,7 +8,7 @@ class Sidebar extends React.Component {
         <ul>
           <li>
             <Link to="/">
-              <div className="bg-gray p-2"> Sturdy Pancake! </div>
+              <div className="bg-gray p-2"> Plantly! </div>
             </Link>
           </li>
           <hr />
