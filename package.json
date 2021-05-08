@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "craco": "^0.0.3",
     "formik": "^2.2.6",
     "http-proxy-middleware": "^1.2.0",
     "react": "^17.0.2",
