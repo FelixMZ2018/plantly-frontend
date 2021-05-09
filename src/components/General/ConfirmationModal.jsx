@@ -1,5 +1,5 @@
 import Button from "../General/Button";
-import React, { setState, useState, useEffect } from "react";
+import React from "react";
 
 export default function ConfirmationModal(props) {
   return (

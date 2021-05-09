@@ -1,8 +1,7 @@
 import React from "react";
-import { render } from "react-dom";
 import { Formik, Field, Form } from "formik";
 import { axiosInstance } from "../../clients/axiosInstance";
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const CreatePlant = (props) => {
   const history = useHistory();

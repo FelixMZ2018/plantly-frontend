@@ -5,7 +5,6 @@ import { useHistory, Link } from "react-router-dom";
 
 function Login(props) {
   const history = useHistory();
-  const error_message = "";
   const [ErrorMessage, setErrorMessage] = useState("");
 
   return (
