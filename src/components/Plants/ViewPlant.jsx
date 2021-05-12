@@ -9,6 +9,7 @@ class ViewPlant extends React.Component {
   constructor(props) {
     super(props);
     this.handleDelete = this.handleDelete.bind(this);
+    this.closeModal = this.closeModal.bind(this);
     this.state = {
       error: null,
       isLoaded: false,
@@ -31,6 +32,11 @@ class ViewPlant extends React.Component {
         }
       });
   }
+  closeModal(props){
+    this.setState({
+      modal: false,
+    });
+  }
 
   showDeleteModal(props) {
     if (this.state.modal) {
@@ -38,6 +44,7 @@ class ViewPlant extends React.Component {
         <ConfirmationModal
           text={"Are you sure you want to delete this plant"}
           function={this.handleDelete}
+          close={this.closeModal}
         />
       );
     }

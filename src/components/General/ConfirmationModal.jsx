@@ -12,6 +12,9 @@ export default function ConfirmationModal(props) {
         <div onClick={props.function} className="flex justify-end pt-2">
           <Button text="Delete this Plant" />
         </div>
+        <div onClick={props.closeModal} className="flex justify-end pt-2">
+          <Button text="Close" />
+        </div>
       </div>
     </div>
   );
